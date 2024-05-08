@@ -13,10 +13,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
         designSize: MediaQuery.of(context).size.width > 900
-            ? Size(1440, 900)
-            : Size(375, 800),
+            ? const Size(1440, 900)
+            : const Size(375, 800),
         builder: (context, child) {
-          return MaterialApp(
+          return const MaterialApp(
             home: HomePage(),
             debugShowCheckedModeBanner: false,
           );
